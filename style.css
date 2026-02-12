@@ -1,0 +1,21 @@
+.hidden-message {
+    display: none;
+}
+
+body {
+    background: linear-gradient(135deg, darkgreen, purple);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.airplane {
+    width: 100px;
+    height: auto;
+    border: 2px solid purple;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.airplane:hover {
+    transform: scale(1.1);
+}
