@@ -1,21 +1,41 @@
-.hidden-message {
-    display: none;
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #003300; /* Dark Green */
+    color: #ffffff;
 }
 
-body {
-    background: linear-gradient(135deg, darkgreen, purple);
-    color: white;
-    font-family: Arial, sans-serif;
+h1, h2, h3 {
+    color: #800080; /* Purple Accents */
 }
 
 .airplane {
-    width: 100px;
-    height: auto;
-    border: 2px solid purple;
-    border-radius: 10px;
-    transition: transform 0.2s;
+    animation: fly 5s linear infinite;
 }
 
-.airplane:hover {
-    transform: scale(1.1);
+@keyframes fly {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50px); }
 }
+
+.button {
+    background-color: #800080; /* Purple */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Additional game styles can be added here */
